@@ -24,6 +24,10 @@
   background: url("./assets/Hero.jpg") no-repeat center center/cover;
   opacity: 0.8;
 }
+.aboutImage {
+  background: url("./assets/About.jpg") no-repeat center center/cover;
+  opacity: 0.8;
+}
 .rubberBand {
   display: inline-block;
   transition: 0.6s all;
@@ -93,6 +97,14 @@
   transition: 0.3s all;
 }
 .hoverLogo path:hover {
+  cursor: pointer;
+  fill: var(--main-font-color);
+}
+.socialIcon path {
+  fill: white;
+  transition: 0.3s all;
+}
+.socialIcon path:hover {
   cursor: pointer;
   fill: var(--main-font-color);
 }
