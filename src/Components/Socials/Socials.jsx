@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Socials = () => {
   return (
-    <div className="absolute bottom-4 right-4 w-fit h-fit px-3 py-2 flex justify-center items-center gap-4">
+    <div className="absolute bottom-4 right-4 w-fit h-fit px-3 py-2 flex justify-center items-center gap-4 z-10">
       <Link to="">
         <svg
           width="19"

@@ -4,12 +4,14 @@ import Blog from "./Components/Blog/Blog";
 import { Routes, Route } from "react-router-dom";
 import Hero from "./Pages/Hero/Hero";
 import About from "./Pages/About/About";
+import Skills from "./Pages/Skills/Skills";
 
 function App() {
   return (
     <Routes>
       <Route exact path="/" element={<Hero />}></Route>
       <Route exact path="/about" element={<About />}></Route>
+      <Route exact path="/skills" element={<Skills />}></Route>
     </Routes>
   );
 }

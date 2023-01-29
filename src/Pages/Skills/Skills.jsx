@@ -1,18 +1,17 @@
 import React from "react";
-import AboutText from "../../Components/AboutText/AboutText";
 import Logo from "../../Components/Logo/Logo";
 import Sidebar from "../../Components/Sidebar/Sidebar";
+import SkillsText from "../../Components/SkillsText/SkillsText";
 import Socials from "../../Components/Socials/Socials";
-
-const About = () => {
+const Skills = () => {
   return (
-    <main className="w-[100vw] h-[100vh] aboutImage flex justify-center items-center">
+    <main className="w-[100vw] h-[100vh] skillsImage flex justify-center items-center">
       <Logo />
       <Sidebar />
-      <AboutText />
+      <SkillsText />
       <Socials />
     </main>
   );
 };
 
-export default About;
+export default Skills;

@@ -28,6 +28,10 @@
   background: url("./assets/About.jpg") no-repeat center center/cover;
   opacity: 0.8;
 }
+.skillsImage {
+  background: url("./assets/Skills.jpg") no-repeat center center/cover;
+  opacity: 0.9;
+}
 .rubberBand {
   display: inline-block;
   transition: 0.6s all;
@@ -107,4 +111,88 @@
 .socialIcon path:hover {
   cursor: pointer;
   fill: var(--main-font-color);
+}
+.progressValue::-webkit-progress-value {
+  background-color: var(--main-font-color);
+}
+.toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 80px;
+  height: 40px;
+  background-color: var(--main-font-color);
+  border-radius: 20px;
+  border: 2px solid var(--main-font-color);
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  outline: none;
+  transition: 0.6s all;
+}
+.toggle::before {
+  content: "";
+  background: radial-gradient(#fff, #ccc, #333);
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: inset -8px -8px 8px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  transition: 0.6s all;
+  z-index: 2;
+}
+.toggle::after {
+  content: "MDE";
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  transition: 0.6s all;
+  z-index: 1;
+}
+.toggle:checked::before {
+  content: "";
+  background: radial-gradient(#fff, #ccc, #333);
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 50%;
+}
+.toggle:checked::after {
+  content: "FWD";
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+  top: 50%;
+  left: 5px;
+  transform: translate(0, -50%);
+}
+@media only screen and (max-width: 640px) {
+  .toggle {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+  }
+  .toggle::before {
+    width: 26px;
+    height: 26px;
+  }
+  .toggle::after {
+    font-size: 12px;
+  }
+  .toggle:checked::before {
+    width: 26px;
+    height: 26px;
+  }
+  .toggle:checked::after {
+    font-size: 12px;
+  }
 }
