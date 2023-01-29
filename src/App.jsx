@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Hero from "./Pages/Hero/Hero";
 import About from "./Pages/About/About";
 import Skills from "./Pages/Skills/Skills";
+import Projects from "./Pages/Projects/Projects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" element={<Hero />}></Route>
       <Route exact path="/about" element={<About />}></Route>
       <Route exact path="/skills" element={<Skills />}></Route>
+      <Route exact path="/projects" element={<Projects />}></Route>
     </Routes>
   );
 }
