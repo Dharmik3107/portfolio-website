@@ -6,6 +6,7 @@ import Hero from "./Pages/Hero/Hero";
 import About from "./Pages/About/About";
 import Skills from "./Pages/Skills/Skills";
 import Projects from "./Pages/Projects/Projects";
+import Blogs from "./Pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/about" element={<About />}></Route>
       <Route exact path="/skills" element={<Skills />}></Route>
       <Route exact path="/projects" element={<Projects />}></Route>
+      <Route exact path="/blogs" element={<Blogs />}></Route>
     </Routes>
   );
 }
