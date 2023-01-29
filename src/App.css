@@ -1,41 +1,98 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --main-font-color: #00ffc2;
+  --white-font-color: #ffffff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.openSans {
+  font-family: "Open Sans", normal;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.inter {
+  font-family: "Inter", sans-serif;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.orbitron {
+  font-family: "Orbitron", sans-serif;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.animateButton {
+  transition: 0.6s all;
+}
+.animateButton:hover {
+  cursor: pointer;
+  color: var(--white-font-color);
+  box-shadow: inset 11em 0 0 0 var(--main-font-color);
+}
+.heroImage {
+  background: url("./assets/Hero.jpg") no-repeat center center/cover;
+  opacity: 0.8;
+}
+.rubberBand {
+  display: inline-block;
+  transition: 0.6s all;
+}
+.rubberBand:hover {
+  cursor: default;
+  animation: rubberBand 0.6s linear 1;
+  color: var(--main-font-color);
+}
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-  to {
-    transform: rotate(360deg);
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    -ms-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    -ms-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navLink {
+  transition: 0.3s all;
 }
-
-.card {
-  padding: 2em;
+.navLink:hover {
+  color: var(--main-font-color);
 }
-
-.read-the-docs {
-  color: #888;
+.active {
+  color: var(--white-font-color);
+  background-color: var(--main-font-color);
+  padding: 6px 50px;
+  border-radius: 5px;
+}
+.hoverLogo path {
+  fill: white;
+  transition: 0.3s all;
+}
+.hoverLogo path:hover {
+  cursor: pointer;
+  fill: var(--main-font-color);
 }
