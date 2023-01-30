@@ -8,8 +8,8 @@ const SkillsText = () => {
   return (
     <>
       <Toggle setToggleSwitch={setToggleSwitch} />
-      <div className="w-2/3 max-w-[720px] h-[450px]">
-        <h1 className="text-center phone:text-xl tablet:text-4xl laptop:text-6xl openSans text-[#00FFC2] font-extrabold leading-[68px] mb-2">
+      <div className="phone:w-5/6 tablet:w-2/3 max-w-[720px] h-[450px]">
+        <h1 className="text-center phone:text-3xl tablet:text-4xl laptop:text-6xl openSans text-[#00FFC2] font-extrabold leading-[68px] mb-1">
           Skills
         </h1>
         {toggleSwitch ? <Mechanical /> : <Developer />}
