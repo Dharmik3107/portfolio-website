@@ -11,7 +11,7 @@ const HeroText = () => {
         <span className="rubberBand">r</span>
         <span className="rubberBand">m</span>
         <span className="rubberBand">i</span>
-        <span className="rubberBand">k</span>
+        <span className="rubberBand">k</span>&nbsp;
         <span className="rubberBand">A</span>
         <span className="rubberBand">b</span>
         <span className="rubberBand">h</span>
