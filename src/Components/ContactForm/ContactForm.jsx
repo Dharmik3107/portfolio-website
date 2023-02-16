@@ -22,7 +22,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="w-full bg-transparent border-2 border-solid border-[#00FFC2] h-[40px] indent-4 text-white placeholder:font-semibold"
+                className="w-full bg-transparent outline-none border-2 border-solid border-[#00FFC2] h-[40px] indent-4 text-white placeholder:font-semibold focus:border-white"
                 name="firstname"
                 placeholder="Enter First Name"
               />
@@ -36,7 +36,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="w-full bg-transparent border-2 border-solid border-[#00FFC2] h-[40px] indent-4  text-white placeholder:font-semibold"
+                className="w-full bg-transparent outline-none border-2 border-solid border-[#00FFC2] h-[40px] indent-4  text-white placeholder:font-semibold focus:border-white"
                 name="lastname"
                 placeholder="Enter Last Name"
               />
@@ -51,7 +51,7 @@ const ContactForm = () => {
             </label>
             <input
               type="text"
-              className="w-full bg-transparent border-2 border-solid border-[#00FFC2] h-[40px] tablet:mb-5 indent-4 text-white placeholder:font-semibold"
+              className="w-full bg-transparent outline-none border-2 border-solid border-[#00FFC2] h-[40px] tablet:mb-5 indent-4 text-white placeholder:font-semibold focus:border-white"
               name="subject"
               placeholder="Enter Subject"
             />
@@ -68,7 +68,7 @@ const ContactForm = () => {
               id="message"
               cols="30"
               rows="10"
-              className="w-full bg-transparent border-2 border-solid border-[#00FFC2] h-32 indent-4 text-white placeholder:font-semibold"
+              className="w-full bg-transparent outline-none border-2 border-solid border-[#00FFC2] h-32 indent-4 text-white placeholder:font-semibold focus:border-white"
               placeholder="Enter Your Messgae Here "
             ></textarea>
           </div>
