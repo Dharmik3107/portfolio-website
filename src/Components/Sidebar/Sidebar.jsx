@@ -15,37 +15,45 @@ const SidebarComponent = () => {
           label="Show menu"
         />
       </div>
-      {isOpen && (
-        <nav className="absolute top-0 right-0 w-48 h-[100vh] bg-white flex flex-col justify-center items-center gap-8 text-xl font-semibold z-20">
-          <NavLink to="/" className={`navLink ${path === "/" ? "active" : ""}`}>
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={`navLink ${path === "/about" ? "active" : ""}`}
-          >
-            About
-          </NavLink>
-          <NavLink
-            to="/skills"
-            className={`navLink ${path === "/skills" ? "active" : ""}`}
-          >
-            Skills
-          </NavLink>
-          <NavLink
-            to="/projects"
-            className={`navLink ${path === "/projects" ? "active" : ""}`}
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to="/blogs"
-            className={`navLink ${path === "/blogs" ? "active" : ""}`}
-          >
-            Blogs
-          </NavLink>
-        </nav>
-      )}
+      <nav
+        className={`absolute top-0 right-0 w-48 h-[100vh] bg-white flex flex-col justify-center items-center gap-8 text-xl font-semibold z-20 ${
+          isOpen ? "slideIn" : "slideOut"
+        }`}
+      >
+        <NavLink to="/" className={`navLink ${path === "/" ? "active" : ""}`}>
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={`navLink ${path === "/about" ? "active" : ""}`}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/skills"
+          className={`navLink ${path === "/skills" ? "active" : ""}`}
+        >
+          Skills
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={`navLink ${path === "/projects" ? "active" : ""}`}
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          to="/blogs"
+          className={`navLink ${path === "/blogs" ? "active" : ""}`}
+        >
+          Blogs
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={`navLink ${path === "/contact" ? "active" : ""}`}
+        >
+          Contact
+        </NavLink>
+      </nav>
     </>
   );
 };
