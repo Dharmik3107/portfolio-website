@@ -22,6 +22,12 @@ function App() {
         <Route exact path="/blogs" element={<Blogs />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
       </Routes>
+      {/* <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Blogs />
+      <Contact /> */}
     </Suspense>
   );
 }
