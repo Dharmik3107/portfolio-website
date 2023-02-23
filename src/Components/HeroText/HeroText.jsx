@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const HeroText = () => {
   return (
     <section className="flex flex-col justify-center items-center">
-      <h1 className="orbitron phone:text-2xl tablet:text-6xl laptop:text-8xl text-yellow-500 font-bold tracking-widest">
+      <h1 className="orbitron phone:text-2xl tablet:text-6xl laptop:text-8xl text-white font-bold tracking-widest">
         <span className="rubberBand">D</span>
         <span className="rubberBand">h</span>
         <span className="rubberBand">a</span>
